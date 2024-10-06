@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My first three.js app</title>
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(120deg, #0b0c16, #2d2f4f);
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        #buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 1px;
+        }
+        button {
+            background: linear-gradient(135deg, #4b79a1, #283e51);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 5px 10px;
+            margin: 3px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        button:hover {
+            background: linear-gradient(135deg, #283e51, #4b79a1);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+        #info-box {
+            font-size: 15px;
+            margin-top: 20px;
+            width: 25%;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            position: fixed; 
+            top: 80px; 
+            left: 20px; 
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+    <button id="toggleAsteroids">Comet Orbits</button>
+    <button id="togglePlanets">Planet Orbits</button>
+    <div id="buttons-container">
+        <button id="btn-mercury">Mercury</button>
+        <button id="btn-venus">Venus</button>
+        <button id="btn-earth">Earth</button>
+        <button id="btn-mars">Mars</button>
+        <button id="btn-jupiter">Jupiter</button>
+        <button id="btn-saturn">Saturn</button>
+        <button id="btn-uranus">Uranus</button>
+        <button id="btn-neptune">Neptune</button>
+        <button id="btn-pluto">Pluto</button>
+    </div>
+    <div id="info-box">Click a planet to learn more!</div>
+</body>
+</html>
